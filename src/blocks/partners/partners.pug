@@ -1,12 +1,19 @@
 mixin partners(modifier)
   .partners&attributes(attributes)
     - var i = 1
-    while i <= 16
+    while i <= 17
       if i == 16
-        a(href="/partner-r7-office.html", target="_blank", title="АО «Р7» — российский разработчик офисного программного обеспечения")
+        a(href="/partner-r7-office.html", title="АО «Р7» — российский разработчик офисного программного обеспечения")
           img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="АО «Р7» — российский разработчик офисного программного обеспечения")
+      
       else
-        img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Partner Logo")
+
+        if i == 17
+          a(href="img/partner-myoffice.pdf", target="_blank", title="Презентация о компании и продуктах МойОфис")
+            img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Презентация о компании и продуктах МойОфис")
+
+        else
+          img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Partner Logo")
 
     a(href="https://www.drweb.ru/", target="_blank", title="Dr.Web Партнер ")
             img(src="http://st.drweb.com/static/new-www/files/shields/RU/logo_partner.mini.png", alt="Dr.Web Партнер ")
