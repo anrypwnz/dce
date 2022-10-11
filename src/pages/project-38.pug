@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Монтажные, коммутационные и пуско-наладочные работы и разработка документации при модернизации кластеризованной и географически распределенной системы хранения данных ФАУ «Главгосэкспертиза России»"
+
+block content
+  +header('header--projects')
+  +breadcrumbs('Проекты')
+  .container
+    .row
+      .col-lg-8
+        +article('article--project--38')
+  +footer

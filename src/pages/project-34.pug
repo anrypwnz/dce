@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Техническое обслуживание и сопровождение корпоративной информационной инфраструктуры"
+
+block content
+  +header('header--projects')
+  +breadcrumbs('Проекты')
+  .container
+    .row
+      .col-lg-8
+        +article('article--project--34')
+  +footer

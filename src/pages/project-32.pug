@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Сопровождение и обеспечение функционирования ИТ-систем Росавтодора"
+
+block content
+  +header('header--projects')
+  +breadcrumbs('Проекты')
+  .container
+    .row
+      .col-lg-8
+        +article('article--project--32')
+  +footer

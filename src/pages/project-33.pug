@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Обеспечение функционирования комплекса программных и аппаратных средств экстренных оперативных служб и системы 112 города Москвы"
+
+block content
+  +header('header--projects')
+  +breadcrumbs('Проекты')
+  .container
+    .row
+      .col-lg-8
+        +article('article--project--33')
+  +footer

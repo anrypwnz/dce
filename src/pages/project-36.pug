@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Сопровождение комплекса технических средств и общесистемного программного обеспечения ГАС ПС и ИСОП"
+
+block content
+  +header('header--projects')
+  +breadcrumbs('Проекты')
+  .container
+    .row
+      .col-lg-8
+        +article('article--project--36')
+  +footer
