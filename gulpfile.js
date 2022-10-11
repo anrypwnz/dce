@@ -1,14 +1,13 @@
-var gulp = require('gulp'),
-  del = require('del'),
-  autoprefixer = require('gulp-autoprefixer'),
-  browserSync = require('browser-sync'),
-  sass = require('gulp-sass'),
-  pug = require('gulp-pug'),
-  concat = require("gulp-concat"),
-  rename = require("gulp-rename"),
-  imagemin = require('gulp-imagemin'),
-  plumber = require('gulp-plumber');
-
+const gulp = require('gulp');
+const del = require('del');
+const autoprefixer = require('gulp-autoprefixer');
+const browserSync = require('browser-sync');
+const pug = require('gulp-pug');
+const sass = require('gulp-sass')(require('sass'));
+const concat = require("gulp-concat");
+const rename = require("gulp-rename");
+const imagemin = require('gulp-imagemin');
+const plumber = require('gulp-plumber');
 
 var paths = {
   dirs: {

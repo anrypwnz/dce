@@ -9,8 +9,6 @@
     "gulp-autoprefixer": "5.0.0",
     "gulp-concat": "2.6.0",
     "gulp-pug": "3.1.0",
-    "gulp-sass": "3.1.0",
-    "node-sass": "4.14.1",
     "npm": "5.6.0"
   },
   "devDependencies": {
@@ -20,12 +18,14 @@
     "gulp-imagemin": "4.1.0",
     "gulp-plumber": "1.2.0",
     "gulp-rename": "1.2.2",
-    "jquery": "3.3.1"
+    "gulp-sass": "^5.1.0",
+    "jquery": "3.3.1",
+    "sass": "^1.55.0"
   },
   "scripts": {
     "dev": "node_modules/gulp/node_modules/.bin/gulp dev",
     "build": "node_modules/gulp/node_modules/.bin/gulp build",
     "now-dev": "node_modules/gulp/node_modules/.bin/gulp dev",
     "now-build": "npm run build"
-  } 
+  }
 }
