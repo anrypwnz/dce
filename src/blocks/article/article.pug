@@ -1,112 +1,117 @@
 mixin article(modifier)
   .article&attributes(attributes)
 
-    if modifier == 'article--project--1'
-      include article--project--1
+    case modifier
+      when 'article--project--1'
+        include article--project--1
 
-    if modifier == 'article--project--2'
-      include article--project--2
+      when 'article--project--2'
+        include article--project--2
 
-    if modifier == 'article--project--3'
-      include article--project--3
+      when 'article--project--3'
+        include article--project--3
 
-    if modifier == 'article--project--4'
-      include article--project--4
+      when 'article--project--4'
+        include article--project--4
 
-    if modifier == 'article--project--5'
-      include article--project--5
+      when 'article--project--5'
+        include article--project--5
 
-    if modifier == 'article--project--6'
-      include article--project--6
+      when 'article--project--6'
+        include article--project--6
 
-    if modifier == 'article--project--7'
-      include article--project--7
+      when 'article--project--7'
+        include article--project--7
 
-    if modifier == 'article--project--8'
-      include article--project--8
+      when 'article--project--8'
+        include article--project--8
 
-    if modifier == 'article--project--9'
-      include article--project--9
+      when 'article--project--9'
+        include article--project--9
 
-    if modifier == 'article--project--10'
-      include article--project--10
+      when 'article--project--10'
+        include article--project--10
 
-    if modifier == 'article--project--11'
-      include article--project--11
+      when 'article--project--11'
+        include article--project--11
 
-    if modifier == 'article--project--12'
-      include article--project--12
+      when 'article--project--12'
+        include article--project--12
 
-    if modifier == 'article--project--13'
-      include article--project--13
+      when 'article--project--13'
+        include article--project--13
 
-    if modifier == 'article--project--14'
-      include article--project--14
+      when 'article--project--14'
+        include article--project--14
 
-    if modifier == 'article--project--15'
-      include article--project--15
+      when 'article--project--15'
+        include article--project--15
 
-    if modifier == 'article--project--16'
-      include article--project--16
+      when 'article--project--16'
+        include article--project--16
 
-    if modifier == 'article--project--17'
-      include article--project--17
+      when 'article--project--17'
+        include article--project--17
 
-    if modifier == 'article--project--18'
-      include article--project--18
+      when 'article--project--18'
+        include article--project--18
 
-    if modifier == 'article--project--19'
-      include article--project--19
+      when 'article--project--19'
+        include article--project--19
 
-    if modifier == 'article--project--20'
-      include article--project--20
+      when 'article--project--20'
+        include article--project--20
 
-    if modifier == 'article--project--21'
-      include article--project--21
+      when 'article--project--21'
+        include article--project--21
 
-    if modifier == 'article--project--22'
-      include article--project--22
+      when 'article--project--22'
+        include article--project--22
 
-    if modifier == 'article--project--31'
-      include article--project--31
+      when 'article--project--31'
+        include article--project--31
 
-    if modifier == 'article--project--32'
-      include article--project--32
+      when 'article--project--32'
+        include article--project--32
 
-    if modifier == 'article--project--33'
-      include article--project--33
+      when 'article--project--33'
+        include article--project--33
 
-    if modifier == 'article--project--34'
-      include article--project--34
+      when 'article--project--34'
+        include article--project--34
 
-    if modifier == 'article--project--35'
-      include article--project--35
+      when 'article--project--35'
+        include article--project--35
 
-    if modifier == 'article--project--36'
-      include article--project--36
+      when 'article--project--36'
+        include article--project--36
 
-    if modifier == 'article--project--37'
-      include article--project--37
+      when 'article--project--37'
+        include article--project--37
 
-    if modifier == 'article--project--38'
-      include article--project--38
+      when 'article--project--38'
+        include article--project--38
 
-    if modifier == 'article--project--39'
-      include article--project--39
+      when 'article--project--39'
+        include article--project--39
 
 
 
-    if modifier == 'article--service--1'
-      include article--service--1
+      when 'article--service--1'
+        include article--service--1
 
-    if modifier == 'article--service--2'
-      include article--service--2
+      when 'article--service--2'
+        include article--service--2
 
-    if modifier == 'article--service--3'
-      include article--service--3
+      when 'article--service--3'
+        include article--service--3
 
-    if modifier == 'article--service--4'
-      include article--service--4
+      when 'article--service--4'
+        include article--service--4
 
-    if modifier == 'article--service--5'
-      include article--service--5
+      when 'article--service--5'
+        include article--service--5
+        
+      default
+        p
+    

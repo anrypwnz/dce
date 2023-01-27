@@ -1,31 +1,5 @@
-mixin project-sm(picture, title, modifier)
+mixin project-sm(picture, title, page)
 
-	if modifier == 'article--project--1'
-
-		a.project-sm(href="project-1.html")&attributes(attributes)
-			img.project-sm__picture(src="img/" + picture, alt="Logo")
-			p.project-sm__title= title
-
-
-	if modifier == 'article--project--3'
-
-		a.project-sm(href="project-3.html")&attributes(attributes)
-			img.project-sm__picture(src="img/" + picture, alt="Logo")
-			p.project-sm__title= title
-
-
-	if modifier == 'article--project--10'
-
-
-		a.project-sm(href="project-10.html")&attributes(attributes)
-			img.project-sm__picture(src="img/" + picture, alt="Logo")
-			p.project-sm__title= title
-
-	if modifier == 'article--project--17'
-
-		a.project-sm(href="project-17.html")&attributes(attributes)
-			img.project-sm__picture(src="img/" + picture, alt="Logo")
-			p.project-sm__title= title
-
-						
-			
+	a.project-sm(href= page)&attributes(attributes)
+		img.project-sm__picture(src="img/" + picture, alt="Logo")
+		p.project-sm__title!= title

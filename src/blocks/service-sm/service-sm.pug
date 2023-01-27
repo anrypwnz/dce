@@ -1,32 +1,6 @@
-mixin service-sm(picture, title, modifier)
+mixin service-sm(picture, title, page)
 
-	if modifier == 'article--service--1'
-		a.service-sm(href="service-audit-and-consulting.html")&attributes(attributes)
-			.service-sm__picture
-				img.service-sm__image(src="img/" + picture, alt="Picture")
-				p.service-sm__title= title
-
-	if modifier == 'article--service--2'
-		a.service-sm(href="service-engineering.html")&attributes(attributes)
-			.service-sm__picture
-				img.service-sm__image(src="img/" + picture, alt="Picture")
-				p.service-sm__title= title
-
-	if modifier == 'article--service--3'
-		a.service-sm(href="service-equipment-supplies.html")&attributes(attributes)
-			.service-sm__picture
-				img.service-sm__image(src="img/" + picture, alt="Picture")
-				p.service-sm__title= title
-
-	if modifier == 'article--service--4'
-		a.service-sm(href="service-implementation.html")&attributes(attributes)
-			.service-sm__picture
-				img.service-sm__image(src="img/" + picture, alt="Picture")
-				p.service-sm__title= title
-
-	if modifier == 'article--service--5'
-		a.service-sm(href="service-operation-and-maintenance.html")&attributes(attributes)
-			.service-sm__picture
-				img.service-sm__image(src="img/" + picture, alt="Picture")
-				p.service-sm__title= title
-
+	a.service-sm(href= page)&attributes(attributes)
+		.service-sm__picture
+			img.service-sm__image(src="img/" + picture, alt="Picture")
+			p.service-sm__title= title
