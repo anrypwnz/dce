@@ -1,29 +1,6 @@
 mixin partners(modifier)
   .partners&attributes(attributes)
-    - var i = 1
-    while i <= 19
-      if i == 16
-        a(href="https://r7-office.ru", title="АО «Р7» — российский разработчик офисного программного обеспечения")
-          img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="АО «Р7» — российский разработчик офисного программного обеспечения")
-      
-      else
-        if i == 17
-          a(href="https://myoffice.ru", target="_blank", title="МойОфис")
-            img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="МойОфис")
+    - var i = 13
+    while i <= 33
 
-        else
-          if i == 18
-            a(href="https://www.rosalinux.ru", target="_blank", title="ООО «НТЦ ИТ РОСА»")
-              img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="ООО «НТЦ ИТ РОСА»")
-          
-          else
-            if i == 19
-              a(href="https://nerpa-it.ru", target="_blank", title="Nerpa – производитель компьютерной техники и IT решений")
-                img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Nerpa – производитель компьютерной техники и IT решений")
-
-            else
-              img.partners__item(src="img/partner-" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Partner Logo")
-
-    a(href="https://www.drweb.ru/", target="_blank", title="Dr.Web Партнер ")
-            img(src="http://st.drweb.com/static/new-www/files/shields/RU/logo_partner.mini.png", alt="Dr.Web Партнер ")
-
+      img.partners__item(src="img/" + i + ".png", srcset="img/partner-" + i++ + "_2x.png 2x", alt="Partner Logo")

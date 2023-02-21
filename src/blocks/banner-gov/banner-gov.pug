@@ -3,11 +3,16 @@ mixin banner-gov(modifier)
   .banner-gov
     .container
       .row
-        .col-12.d-sm-flex.flex-row
-          .left
-            h6 Специальные предложения для государственных компаний и бюджетных учреждений
-          .right
-            ul
-              li План импортозамещения
-              li Информационная безопасность
-              li Масштабирование без закупок
+        .left
+          img(src="img/gerb_rf.svg", alt="gerb").gerb
+          a(href='service-government.html'): h6 Специальные предложения для государственных компаний и бюджетных учреждений
+        .right
+          span
+            img.banner-icon(src="img/bear.png" alt="bear")
+            | План импортозамещения
+          span.point
+            img.banner-icon(src="img/shield.png" alt="shield")
+            | Информационная безопасность
+          span.point
+            img.banner-icon(src="img/chip.png" alt="chip")
+            | Масштабирование без закупок

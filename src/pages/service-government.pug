@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Специальные предложения для государственных компаний и бюджетных учреждений"
+
+block content
+  +header('header--services')
+  +breadcrumbs('Услуги')
+  .container
+    .row
+      .col-lg-8
+        +article('article--service--6')
+  +footer
