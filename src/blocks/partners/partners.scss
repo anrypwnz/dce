@@ -1,20 +1,21 @@
 .partners {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  align-items: flex-start;
+  gap: 20px;
 
+  @include media-breakpoint-down(sm) {
+    justify-content: center;
+    gap: 10px;
+  }
   &__item {
-    margin-bottom: 50px;
-    margin-right: 80px;
     align-self: center;
-    max-width: 160px;
-    max-height: 100px;
+    width: 200px;
 
-    @include media-breakpoint-down(sm) {
-      max-width: 70px;
-      margin-right: 25px;
+    @include media-breakpoint-down(xs) {
+      max-width: 100px;
+      gap: 10px;
     }
   }
 }
