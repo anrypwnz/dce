@@ -1,0 +1,13 @@
+extends ../templates/template.pug
+
+block prepend head
+  - var title = "Проектирование"
+
+block content
+  +header('header--services')
+  +breadcrumbs('Услуги')
+  .container
+    .row
+      .col-lg-8
+        +article('article--service--2')
+  +footer
